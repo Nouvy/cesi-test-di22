@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('cars', function (Blueprint $table) {
             $table->id();
-            $table->string('marque', length: 30);
+            $table->string('marque', length: 150);
             $table->string('modele', length: 50);
             $table->string('immat', length: 7)->unique();
             $table->string('num_serie', length: 35)->unique();
